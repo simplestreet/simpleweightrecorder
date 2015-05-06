@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <Button
+	       android:id="@+id/edit_footer"
+	       android:layout_alignParentBottom="true"
+	       android:layout_width="match_parent"
+	       android:layout_height="50dp"
+	       android:layout_marginBottom="10dp"
+	       android:text="決定" />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/edit_footer" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="日付:" />
+            
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:calendarViewShown="false" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="時刻:" />
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+            
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            <TextView
+	                android:id="@+id/textView3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp"
+	                android:text="体重:" />
+	
+	            <EditText
+	                android:id="@+id/editText1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:gravity="right"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	            
+	            <TextView
+	                android:id="@+id/textView5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp"
+	                android:text="kg" />
+	        </LinearLayout>
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:orientation="horizontal" >
+	            <TextView
+	                android:id="@+id/textView4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp"
+	                android:text="体脂肪:" />
+	            <EditText
+	                android:id="@+id/editText2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="right"
+	                android:ems="10"
+	                android:inputType="numberDecimal" />
+	           <TextView
+	                android:id="@+id/textView6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp"
+	                android:text="%" />
+
+	         </LinearLayout>
+	         <Space
+	               android:layout_width="wrap_content"
+	               android:layout_height="80dp" />	
+        </LinearLayout>
+    </ScrollView>
+
+    
+</RelativeLayout>

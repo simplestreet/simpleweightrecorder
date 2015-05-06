@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.achartengine.MainActivity" >
+
+	<LinearLayout
+	    android:id="@+id/footer"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	     android:layout_alignParentBottom="true"
+	    android:orientation="horizontal">
+
+		<ImageButton
+		    android:id="@+id/chart_button1"
+	   	    android:layout_weight="1"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="0dp"
+		    android:src="@drawable/ic_action_previous_item" />
+		<TextView
+	    android:id="@+id/chart_textView1"
+	    android:background="#00ff0000"
+	    android:layout_weight="4"
+	    android:layout_width="0dp"
+	    android:gravity="center"
+	    android:textSize="20sp"
+	    android:layout_height="match_parent"
+	    android:text="TextView" />
+
+		<ImageButton
+		    android:id="@+id/chart_button2"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/ic_action_next_item" />
+
+	 </LinearLayout>
+	 	<LinearLayout
+	    android:id="@+id/chart"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+	    android:layout_above="@id/footer" 
+	    android:orientation="horizontal" >
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<EditText
+        android:id="@+id/et_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:gravity="right"
+        android:layout_centerInParent="true"
+        android:inputType="numberDecimal" >
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/tv1_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/et_fat"
+         android:layout_alignBottom="@id/et_fat"
+         android:textSize="15sp"
+         android:layout_marginRight="10dp"
+        android:text="体脂肪:" />
+	<TextView
+        android:id="@+id/tv2_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/et_fat"
+         android:layout_alignBottom="@id/et_fat"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:text="%" />
+	
+    <EditText
+        android:id="@+id/et_wt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:gravity="right"
+        android:layout_above="@id/et_fat"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal" >
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/tv1_wt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/et_fat"
+        android:layout_alignBottom="@id/et_wt"
+        android:textSize="15sp"
+        android:layout_marginRight ="10dp"
+        android:text="体重:" />
+	<TextView
+        android:id="@+id/tv2_wt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/et_fat"
+        android:layout_alignBottom="@id/et_wt"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:text="kg" />
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/et_fat"
+	    android:layout_centerHorizontal="true"
+	    android:minWidth="150dp"
+	    android:layout_marginTop="40dp"
+	    android:text="決定" />
+</RelativeLayout>
